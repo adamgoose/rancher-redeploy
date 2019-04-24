@@ -14,8 +14,8 @@ func getConfig(cmd *cobra.Command) *rest.Config {
 		c, err := rest.InClusterConfig()
 		if err != nil {
 			panic(err.Error())
-			return c
 		}
+		return c
 	}
 
 	// use the current context in kubeconfig
